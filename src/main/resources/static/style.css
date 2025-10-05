@@ -1,0 +1,28 @@
+nav {
+  background-image: linear-gradient(to bottom right, #009245, #fcee21);
+}
+.card-body {
+  background-image: linear-gradient(to bottom right, #ffdb01, #0e197d);
+}
+th {
+  text-align: center;
+  font-size: 18px;
+}
+.table-responsive {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+td {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-image: url("/images/web.jpg");
+}
+.items_table {
+  padding-left: 40px;
+  padding-right: 40px;
+}

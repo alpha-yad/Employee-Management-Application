@@ -1,0 +1,87 @@
+🔹 Package declaration
+package com.ems.app.pojo;
+
+
+Your class is inside the pojo package.
+
+pojo = Plain Old Java Object → used to represent data objects.
+
+🔹 Imports
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+lombok.Data → generates getters, setters, toString, equals, hashCode automatically.
+
+lombok.AllArgsConstructor → generates a constructor with all fields.
+
+lombok.NoArgsConstructor → generates a default constructor (no parameters).
+
+@Id → marks id as the primary key for MongoDB documents.
+
+@Document(collection = "employee") → tells Spring this class maps to the employee collection in MongoDB.
+
+🔹 Annotations
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Document(collection = "employee")
+
+
+@Data → Instead of writing 50 lines of getters/setters, Lombok generates them for you at compile time.
+
+@AllArgsConstructor → Generates a constructor like:
+
+public Employee(String id, String employeeName, String employeeEmail, Long employeePhone, String employeeGender, String employeeSalary, String employeeRole) { ... }
+
+
+@NoArgsConstructor → Generates:
+
+public Employee() {}
+
+
+@Document(collection = "employee") → This class is a MongoDB document stored in the "employee" collection.
+
+🔹 Class and Fields
+public class Employee {
+
+    @Id private String id;
+    private String employeeName;
+    private String employeeEmail;
+    private Long employeePhone;
+    private String employeeGender;
+    private String employeeSalary;
+    private String employeeRole;
+}
+
+
+id → unique identifier (_id) in MongoDB.
+
+employeeName → employee’s name.
+
+employeeEmail → employee’s email.
+
+employeePhone → employee’s phone number (Long since it’s numeric).
+
+employeeGender → Male/Female/Other.
+
+employeeSalary → stored as String (could also be Double if you want to do calculations).
+
+employeeRole → designation/role (e.g., Developer, Manager).
+
+✅ Example: Document stored in MongoDB
+
+When you save an Employee, MongoDB will store it like this:
+
+{
+  "_id": "EMP1234",
+  "employeeName": "Ashish Yadav",
+  "employeeEmail": "ashish@example.com",
+  "employeePhone": 9876543210,
+  "employeeGender": "Male",
+  "employeeSalary": "60000",
+  "employeeRole": "Software Developer"
+}
