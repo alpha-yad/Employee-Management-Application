@@ -10,54 +10,43 @@ To deploy this project run
 mvn spring-boot:run
 ```
 
-##🧰 Tech Stack
+## Tech Stack
 
-Backend: Spring Boot
-Frontend: Thymeleaf (HTML, CSS, JS, Bootstrap)
-Database: MongoDB Atlas (Cloud)
-Build Tool: Maven
-Server: Embedded Tomcat
+- **Backend:** Spring Boot
+- **Frontend:** Thymeleaf (HTML, CSS, JS, Bootstrap)
+- **Database:** MongoDB Atlas (Cloud)
+- **Build Tool:** Maven
+- **Server:** Embedded Tomcat
 
-⚙️ MongoDB Atlas Setup
+## ⚙️ MongoDB Atlas Setup
 
-To connect the project with MongoDB Atlas, follow these steps:
+To connect the project with **MongoDB Atlas**, follow these steps:
 
-Create an Account
-Go to MongoDB Atlas
-and sign up.
+### 1️⃣ Create an Account
 
-Create a Cluster
-Click on “Build a Database” and choose the free shared cluster.
+Go to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and sign up.
 
-Add Network Access
+### 2️⃣ Create a Cluster
 
-In the “Network Access” tab, click Add IP Address.
+Click **"Build a Database"** and choose the free shared cluster.
 
-Add your current IP or select Allow Access from Anywhere (0.0.0.0/0).
+### 3️⃣ Add Network Access
 
-Create a Database User
+- Go to **Network Access → Add IP Address**
+- Add your current IP or select **Allow Access from Anywhere (0.0.0.0/0)**
 
-Go to Database Access → Add New Database User.
+### 4️⃣ Create a Database User
 
-Set a username and password.
+- Go to **Database Access → Add New Database User**
+- Set a username and password
+- Give the user the role: `readWriteAnyDatabase`
 
-Give the user readWriteAnyDatabase role.
+### 5️⃣ Get Connection String
 
-Get Connection String
-
-Go to Clusters → Connect → Drivers.
-
-Copy the connection string and replace <db_username> and <db_password> in the following line:
+Go to **Clusters → Connect → Drivers**  
+Copy your connection string and replace `<db_username>` and `<db_password>`:
 
 spring.data.mongodb.uri=mongodb+srv://<db_username>:<db_password>@myatlasclusteredu.pohvd7h.mongodb.net/?retryWrites=true&w=majority&appName=myAtlasClusterEDU
-
-Add the connection string in your src/main/resources/application.properties file:
-
-spring.application.name=employee-management
-spring.data.mongodb.uri=mongodb+srv://<db_username>:<db_password>@myatlasclusteredu.pohvd7h.mongodb.net/?retryWrites=true&w=majority&appName=myAtlasClusterEDU
-spring.thymeleaf.prefix=classpath:/templates/
-spring.thymeleaf.suffix=.html
-spring.thymeleaf.cache=false
 
 Save and run the project
 
@@ -75,32 +64,34 @@ Save and run the project
 
 💻 Responsive and modern UI with Bootstrap
 
-🧠 Run Locally
+###🧠 Run Locally
 
 Clone the project:
 
+```bash
 git clone https://github.com/<your-username>/employee-management-system.git
+```
 
 Navigate to the project directory:
 
+```bash
 cd employee-management-system
+```
 
 Run the application:
 
+```bash
 mvn spring-boot:run
+```
 
-📸 Screenshots
+###📸 Screenshots
 ![Preview](./Screenshots/Initial%20Page.png)
 ![Add employee](./Screenshots/Add.png)
 ![Update employee](./Screenshots/Update%20Employee.png)
 ![Delete employee](./Screenshots/Delete%20Employee.png)
 ![Delete all employee](./Screenshots/Delete%20all%20Employee.png)
 
-👨‍💻 Author
+###👨‍💻 Author
 
 Ashish Yadav
 Aspiring Software Developer | Java & Spring Boot Enthusiast
-
-```
-
-```
