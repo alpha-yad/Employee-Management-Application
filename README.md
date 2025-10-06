@@ -50,48 +50,49 @@ spring.data.mongodb.uri=mongodb+srv://<db_username>:<db_password>@myatlascluster
 
 Save and run the project
 
-🧩 Features
+## Features
 
-➕ Add new employees with name, email, phone, salary, and role
+- **➕ Add Employees** — Add new employees with name, email, phone, salary, and role
 
-📋 View all employees in a clean, tabular layout
+- **📋 View Employees** — Display all employees in a clean, tabular layout
 
-✏️ Update existing employee details
+- **✏️ Update Employees** — Edit existing employee details easily
 
-❌ Delete specific or all employees
+- **❌ Delete Employees** — Remove specific or all employee records
 
-☁️ Real-time data sync with MongoDB Atlas
+- **☁️ MongoDB Atlas Sync** — Real-time cloud data synchronization
 
-💻 Responsive and modern UI with Bootstrap
+- **💻 Responsive UI** — Built with Bootstrap for a modern and mobile-friendly design
 
-###🧠 Run Locally
+## 🧠 Run Locally
 
-Clone the project:
+**Clone the project:**
 
 ```bash
 git clone https://github.com/<your-username>/employee-management-system.git
 ```
 
-Navigate to the project directory:
+**Navigate to the project directory:**
 
 ```bash
 cd employee-management-system
 ```
 
-Run the application:
+**Run the application:**
 
 ```bash
 mvn spring-boot:run
 ```
 
-###📸 Screenshots
+## 📸 Screenshots
+
 ![Preview](./Screenshots/Initial%20Page.png)
 ![Add employee](./Screenshots/Add.png)
 ![Update employee](./Screenshots/Update%20Employee.png)
 ![Delete employee](./Screenshots/Delete%20Employee.png)
 ![Delete all employee](./Screenshots/Delete%20all%20Employee.png)
 
-###👨‍💻 Author
+## 👨‍💻 Author
 
-Ashish Yadav
-Aspiring Software Developer | Java & Spring Boot Enthusiast
+**Ashish Yadav**  
+_Aspiring Software Developer | Java & Spring Boot Enthusiast_
