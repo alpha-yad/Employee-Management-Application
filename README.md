@@ -8,6 +8,7 @@ To deploy this project run
 
 ```bash
 mvn spring-boot:run
+```
 
 ##🧰 Tech Stack
 
@@ -23,7 +24,7 @@ To connect the project with MongoDB Atlas, follow these steps:
 
 Create an Account
 Go to MongoDB Atlas
- and sign up.
+and sign up.
 
 Create a Cluster
 Click on “Build a Database” and choose the free shared cluster.
@@ -50,7 +51,6 @@ Copy the connection string and replace <db_username> and <db_password> in the fo
 
 spring.data.mongodb.uri=mongodb+srv://<db_username>:<db_password>@myatlasclusteredu.pohvd7h.mongodb.net/?retryWrites=true&w=majority&appName=myAtlasClusterEDU
 
-
 Add the connection string in your src/main/resources/application.properties file:
 
 spring.application.name=employee-management
@@ -58,7 +58,6 @@ spring.data.mongodb.uri=mongodb+srv://<db_username>:<db_password>@myatlascluster
 spring.thymeleaf.prefix=classpath:/templates/
 spring.thymeleaf.suffix=.html
 spring.thymeleaf.cache=false
-
 
 Save and run the project
 
@@ -82,11 +81,9 @@ Clone the project:
 
 git clone https://github.com/<your-username>/employee-management-system.git
 
-
 Navigate to the project directory:
 
 cd employee-management-system
-
 
 Run the application:
 
@@ -103,4 +100,7 @@ mvn spring-boot:run
 
 Ashish Yadav
 Aspiring Software Developer | Java & Spring Boot Enthusiast
+
+```
+
 ```
