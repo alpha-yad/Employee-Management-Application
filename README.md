@@ -9,7 +9,7 @@ To deploy this project run
 ```bash
 mvn spring-boot:run
 
-🧰 Tech Stack
+##🧰 Tech Stack
 
 Backend: Spring Boot
 Frontend: Thymeleaf (HTML, CSS, JS, Bootstrap)
@@ -93,10 +93,11 @@ Run the application:
 mvn spring-boot:run
 
 📸 Screenshots
-➕ Add Employee Page
-
-
-✏️ Update Employee Page
+![Preview](./Screenshots/Initial%20Page.png)
+![Add employee](./Screenshots/Add.png)
+![Update employee](./Screenshots/Update%20Employee.png)
+![Delete employee](./Screenshots/Delete%20Employee.png)
+![Delete all employee](./Screenshots/Delete%20all%20Employee.png)
 
 👨‍💻 Author
 
