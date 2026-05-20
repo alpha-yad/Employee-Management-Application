@@ -81,6 +81,7 @@
             </configuration>
         </plugin>
 
+		
         <!-- ADD THIS: Compiler plugin configured to read Lombok annotations -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
